@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lfz.MqListener", "Lfz.MqListener\Lfz.MqListener.csproj", "{5ABCDA7B-75F6-4911-81AF-63BDC8FB3940}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lfz.MqListener.Core", "Lfz.MqListener.Service\Lfz.MqListener.Core.csproj", "{B9B1BC82-1D93-4ACB-8ABB-C958FBB8607C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lfz.MqListener.DlqConsole", "Lfz.MqListener.DlqConsole\Lfz.MqListener.DlqConsole.csproj", "{BDDD573A-C6F2-4CDB-A374-B2614AEE07DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lfz.AutoUpdater", "Lfz.AutoUpdater\Lfz.AutoUpdater.csproj", "{488CD377-AA78-409F-B076-D2E63D4945F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lfz.MqListener.WindowService", "Lfz.MqListener.WindowService\Lfz.MqListener.WindowService.csproj", "{86296C1D-B24E-4BDD-A4E2-5C0002EDE96A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lfz.Core.NET4", "Lfz.Core\Lfz.Core.NET4.csproj", "{1CFB2DDD-58EA-4750-BD9D-68353CF1FF8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ABCDA7B-75F6-4911-81AF-63BDC8FB3940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ABCDA7B-75F6-4911-81AF-63BDC8FB3940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ABCDA7B-75F6-4911-81AF-63BDC8FB3940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ABCDA7B-75F6-4911-81AF-63BDC8FB3940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9B1BC82-1D93-4ACB-8ABB-C958FBB8607C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B1BC82-1D93-4ACB-8ABB-C958FBB8607C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B1BC82-1D93-4ACB-8ABB-C958FBB8607C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B1BC82-1D93-4ACB-8ABB-C958FBB8607C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDDD573A-C6F2-4CDB-A374-B2614AEE07DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDDD573A-C6F2-4CDB-A374-B2614AEE07DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDDD573A-C6F2-4CDB-A374-B2614AEE07DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDDD573A-C6F2-4CDB-A374-B2614AEE07DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{488CD377-AA78-409F-B076-D2E63D4945F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488CD377-AA78-409F-B076-D2E63D4945F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488CD377-AA78-409F-B076-D2E63D4945F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488CD377-AA78-409F-B076-D2E63D4945F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86296C1D-B24E-4BDD-A4E2-5C0002EDE96A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86296C1D-B24E-4BDD-A4E2-5C0002EDE96A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86296C1D-B24E-4BDD-A4E2-5C0002EDE96A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86296C1D-B24E-4BDD-A4E2-5C0002EDE96A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CFB2DDD-58EA-4750-BD9D-68353CF1FF8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CFB2DDD-58EA-4750-BD9D-68353CF1FF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CFB2DDD-58EA-4750-BD9D-68353CF1FF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFB2DDD-58EA-4750-BD9D-68353CF1FF8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

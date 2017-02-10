@@ -1,0 +1,10 @@
+﻿{
+    Version: "2.0.0.1",
+    NewVersion: "2.0.0.2", 
+    AppType: 2,
+    AppName: "拓创客户端程序",
+    ExcuteFileName: "TCSoft.MqListener.exe",
+    IsWindowService: false,
+    DownloadUrl: "",
+    LastUpdateTime: "2012-01-01 12:06:01"
+}

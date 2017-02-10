@@ -1,0 +1,10 @@
+﻿{
+  "Version": "2.0.0.1",
+  "AppType": 2,
+  "NewVersion": "2.0.0.4",
+  "AppName": "拓创客户端程序",
+  "ExcuteFileName": "TCSoft.MqListener.exe",
+  "IsWindowService": false,
+  "DownloadUrl": "http://img.ziyouchi.com/Uploads/20160129/9dfad9394de5488193d55d0411d0e2eb.zip",
+  "LastUpdateTime": "2016-01-29 18:08:11"
+}

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9B1BC82-1D93-4ACB-8ABB-C958FBB8607C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lfz.MqListener</RootNamespace>
+    <AssemblyName>Lfz.MqListener.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Apache.NMS">
+      <HintPath>..\Lib\ActiveMQ\Apache.NMS.dll</HintPath>
+    </Reference>
+    <Reference Include="Apache.NMS.ActiveMQ">
+      <HintPath>..\Lib\ActiveMQ\Apache.NMS.ActiveMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\Lib\FluentNHibernate.2.0.3.0\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.IWshRuntimeLibrary">
+      <HintPath>..\Lib\Interop.IWshRuntimeLibrary.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\MySql.Data.6.9.8\net40\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Json\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\Lib\NHibernate.4.0.4.4000\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\Lib\NLog\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\Lib\ServiceStack.Redis.3.9.71\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\Lib\ServiceStack.Redis.3.9.71\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>..\Lib\ServiceStack.Redis.3.9.71\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\Lib\ServiceStack.Redis.3.9.71\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\WebApiNET4\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\WebApiNET4\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\WebApiNET4\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\WebApiNET4\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access\AppBasicInfoAccess.cs" />
+    <Compile Include="Access\DeviceAccess.cs" />
+    <Compile Include="Access\ConfigCenterClusterComputerAccess.cs" />
+    <Compile Include="Access\ConfigCenterRedisCacheKeyAccess.cs" />
+    <Compile Include="Config\AppSettingsHelperExtension.cs" />
+    <Compile Include="DbConfigHelper.cs" />
+    <Compile Include="MqVistor\Heartbeat\DeviceRegisterCommandVistor.cs" />
+    <Compile Include="MqVistor\Heartbeat\AppRegisterCommandVistor.cs" />
+    <Compile Include="MqVistor\Heartbeat\AppHeartbeatCommandVistor.cs" />
+    <Compile Include="MqVistor\Heartbeat\DeviceHeatbeatCommandVistor.cs" />
+    <Compile Include="MqVistor\PushMessage\AutoUpdateCommandVistor.cs" />
+    <Compile Include="MqVistor\SyncTable\ComandHandler\SyncChargeCjCommandHandler.cs" />
+    <Compile Include="MqVistor\SyncTable\ComandHandler\SyncChargeCommandHandler.cs" />
+    <Compile Include="MqVistor\SyncTable\ComandHandler\SyncInsertOrUpdateCommandHandler.cs" />
+    <Compile Include="MqVistor\SyncTable\ISyncTableComand.cs" />
+    <Compile Include="MqVistor\SyncTable\SyncBigDataServiceHelper.cs" />
+    <Compile Include="MqVistor\SyncTable\ChargeInfoTableMqCommandQuqueVistor.cs" />
+    <Compile Include="MqVistor\SyncTable\SyncTableMqCommandQuqueVistorBase.cs" />
+    <Compile Include="MqVistor\IMqCommandQuqueVistor.cs" />
+    <Compile Include="MqVistor\IMqCommandTopicVistor.cs" />
+    <Compile Include="Mq\Dlq\MqListenerFactoryThreadService.cs" />
+    <Compile Include="Mq\IMqProducerService.cs" />
+    <Compile Include="Mq\MqCommandInfo.cs" />
+    <Compile Include="Mq\MqListenerFactoryThreadService.cs" />
+    <Compile Include="Mq\Dlq\ActiveMqdlqMqListenerService.cs" />
+    <Compile Include="Mq\MqListenerService.cs" />
+    <Compile Include="Mq\MqProducerService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\ConfigCenterMqListenerService.cs" />
+    <Compile Include="Service\IConfigCenterMqListenerService.cs" />
+    <Compile Include="CacheShared\MqConfigService.cs" />
+    <Compile Include="CacheShared\RedisConfigService.cs" />
+    <Compile Include="Shared\App\AppBasicInfo.cs" />
+    <Compile Include="Shared\App\MqAutoUpdateInfo.cs" />
+    <Compile Include="Shared\App\MqHeartbeatInfo.cs" />
+    <Compile Include="Models\ConfigCenter\ConfigCenterClusterComputer.cs" />
+    <Compile Include="Models\ConfigCenter\ConfigCenterMqListener.cs" />
+    <Compile Include="Models\ConfigCenter\ConfigCenterMqTable.cs" />
+    <Compile Include="Models\ConfigCenter\ConfigCenterRedisCacheKey.cs" />
+    <Compile Include="Models\ConfigCenter\ConfigCenter_ModuleSettings.cs" />
+    <Compile Include="Models\Device\DeviceBasicInfo.cs" />
+    <Compile Include="Shared\Enums\AppStatus.cs" />
+    <Compile Include="Shared\Enums\CacheRegionName.cs" />
+    <Compile Include="Shared\Enums\CacheVersionType.cs" />
+    <Compile Include="Shared\Enums\ClusterComputerType.cs" />
+    <Compile Include="Shared\Enums\CustomerInfoStatus.cs" />
+    <Compile Include="Shared\Enums\MqListenerStatus.cs" />
+    <Compile Include="Shared\Enums\StoreStatus.cs" />
+    <Compile Include="Shared\ITreeContent.cs" />
+    <Compile Include="Shared\Models\MqConsts.cs" />
+    <Compile Include="Shared\Models\NMSMessageType.cs" />
+    <Compile Include="Shared\Models\QuqueName.cs" />
+    <Compile Include="Shared\Models\TopicName.cs" />
+    <Compile Include="Shared\SysConfig.cs" />
+    <Compile Include="TCSoftServiceBus.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Lfz.AutoUpdater\Lfz.AutoUpdater.csproj">
+      <Project>{488cd377-aa78-409f-b076-d2e63d4945f1}</Project>
+      <Name>Lfz.AutoUpdater</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lfz.Core\Lfz.Core.NET4.csproj">
+      <Project>{1cfb2ddd-58ea-4750-bd9d-68353cf1ff8d}</Project>
+      <Name>Lfz.Core.NET4</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
